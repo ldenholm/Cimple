@@ -1,5 +1,18 @@
 #include <stdio.h>
 
+void sumTwo() {
+    int x, y;
+
+    printf("Enter your first integer\n");
+    scanf("%i", &x);
+
+    printf("Enter your second integer\n");
+    scanf("%i", &y);
+
+    int result = x + y;
+    printf("The result is: %i\n", result);
+}
+
 int main() {
 
   int isRunning = 1;
@@ -12,12 +25,14 @@ int main() {
     
     switch(ans)
     {
+      case 1:
+        sumTwo();
+        break;
       case 2:
         isRunning = 0;
         break;
     }
-    
+  
   }
-
   return 0;
 }
